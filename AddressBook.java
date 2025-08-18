@@ -1,21 +1,22 @@
 package adress_book;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class AddressBook {
-    public static void main(String[] args) {
-    	System.out.println("Welcome to Address Book Program!");
+    private List<Contact> contacts;
 
-        
-        Contact contact = new Contact(
-                "John",
-                "Doe",
-                "123 Street",
-                "New York",
-                "NY",
-                "10001",
-                "1234567890",
-                "john.doe@example.com"
-        );
+    public AddressBook() {
+        contacts = new ArrayList<>();
+    }
 
-        System.out.println(contact);
+    public void addContact(Contact contact) {
+        contacts.add(contact);
+    }
+
+    public void displayContacts() {
+        for (Contact contact : contacts) {
+            System.out.println(contact);
+        }
     }
 }

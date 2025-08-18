@@ -30,5 +30,30 @@ public class AddressBookmain {
 
         System.out.println("\nContacts in Address Book:");
         addressBook.displayContacts();
+        
+        System.out.println("\nContacts in Address Book:");
+        addressBook.displayContacts();
+
+        // Edit functionality
+        System.out.println("\nEnter the First and Last name of the contact to edit:");
+        System.out.print("First Name: ");
+        String editFirstName = sc.nextLine();
+        System.out.print("Last Name: ");
+        String editLastName = sc.nextLine();
+        addressBook.editContact(editFirstName, editLastName, sc);
+
+        System.out.println("\nUpdated Contacts:");
+        addressBook.displayContacts();
+
+        // Delete functionality
+        System.out.println("\nEnter the First and Last name of the contact to delete:");
+        System.out.print("First Name: ");
+        String deleteFirstName = sc.nextLine();
+        System.out.print("Last Name: ");
+        String deleteLastName = sc.nextLine();
+        addressBook.deleteContact(deleteFirstName, deleteLastName);
+
+        System.out.println("\nFinal Contacts:");
+        addressBook.displayContacts();
     }
 }

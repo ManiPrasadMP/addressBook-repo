@@ -2,11 +2,10 @@ package adress_book;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Scanner;
 
 public class AddressBook {
-    private List<Contact> contacts;
+    private ArrayList<Contact> contacts;
 
     public AddressBook() {
         contacts = new ArrayList<>();

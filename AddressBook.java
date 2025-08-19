@@ -15,9 +15,6 @@ public class AddressBook {
 
     public String getName() { return name; }
 
-<<<<<<< HEAD
-    public void addContact(Contact contact) {
-=======
     public void addContact(Scanner sc) {
     	System.out.print("Enter First Name: ");
         String firstName = sc.nextLine();
@@ -37,7 +34,6 @@ public class AddressBook {
         String email = sc.nextLine();
 
         Contact contact= new Contact(firstName, lastName, address, city, state, zip, phoneNumber, email);
->>>>>>> delete-contact
         contacts.add(contact);
     }
 
